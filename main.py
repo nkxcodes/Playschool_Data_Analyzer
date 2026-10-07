@@ -38,7 +38,7 @@ def main():
     print()
     print(f'========== FEE ANALYSIS ==========')
 
-    total_fees_collected = df['Total_Fee'].sum()
+    total_fees_collected = df['Fees_Paid'].sum()
     average_amount_paid_per_students = df['Fees_Paid'].mean()
     df['Fee_Due'] = df['Total_Fee'] - df['Fees_Paid']
     students_with_due_fees = df[df['Total_Fee'] != df['Fees_Paid']][['Student', 'Fee_Due']]
