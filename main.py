@@ -33,6 +33,29 @@ def main():
 
     print()
     print(f'Lowest attendance: {lowest_attendance}')
+    
+    print()
+    print(f'========== FEE ANALYSIS ==========')
+
+    total_fees_collected = df['Total_Fee'].sum()
+    average_amount_paid_per_students = df['Fees_Paid'].mean()
+    df['Fee_Due'] = df['Total_Fee'] - df['Fees_Paid']
+    students_with_due_fees = df[df['Total_Fee'] != df['Fees_Paid']][['Student', 'Fee_Due']]
+    total_outstanding_amount = df['Fee_Due'].sum()
+
+    print()
+    print(f'Total fees collected: {total_fees_collected}')
+
+    print()
+    print(f'Average amount paid per student: {average_amount_paid_per_students}')
+
+    print()
+    print("Students who haven't paid the full fee: ")
+    print()
+    print(students_with_due_fees)
+
+    print()
+    print(f'Total outstanding amount: ₹{total_outstanding_amount}')
 
 if __name__ == "__main__":
     main()
