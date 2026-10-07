@@ -1,0 +1,55 @@
+PLAYSCHOOL STUDENT REPORT
+=========================
+
+Total Students: 30
+Average Age: 4.40
+Average Attendance: 84.97%
+Average Activity Score: 7.83
+Highest Attendance: 98%
+Lowest Attendance: 67%
+
+STUDENTS IN EACH CLASS
+----------------------
+Class
+LKG        10
+Nursery    10
+UKG        10
+
+FEE REPORT
+----------
+Total Fees Collected: ₹789000
+Average Amount Paid Per Student: ₹26300.00
+Total Outstanding Amount: ₹181000
+
+STUDENTS WITH DUE FEES
+----------------------
+            Student  Fee_Due
+1       Anaya Verma     5000
+2      Vivaan Gupta    10000
+4       Advik Kumar    12000
+5       Aanya Mehta     3000
+7       Kiara Joshi     6000
+8    Arjun Malhotra    15000
+10     Rohan Sharma     7000
+12      Kabir Gupta    12000
+14     Atharv Kumar    16000
+15       Anvi Mehta     4000
+16      Dhruv Patel    10000
+18  Vihaan Malhotra     2000
+19      Sara Kapoor     7000
+21       Tara Verma     5000
+22      Aryan Gupta    17000
+24      Kiaan Kumar    10000
+26      Rudra Patel    20000
+27       Avni Joshi     7000
+28     Dev Malhotra    13000
+
+ATTENDANCE BY CLASS
+-------------------
+Class
+LKG        85.3
+Nursery    83.9
+UKG        85.7
+
+Class With Highest Average Attendance: UKG
+Class With Lowest Average Attendance: Nursery

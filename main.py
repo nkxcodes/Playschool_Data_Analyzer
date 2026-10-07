@@ -92,5 +92,41 @@ def main():
     plt.bar(x2, y2, color='green')
     plt.show()
 
+    with open("report.txt", "w") as file:
+        file.write("PLAYSCHOOL STUDENT REPORT\n")
+        file.write("=========================\n\n")
+
+        file.write(f"Total Students: {total_number_of_students}\n")
+        file.write(f"Average Age: {average_age:.2f}\n")
+        file.write(f"Average Attendance: {average_attendance}%\n")
+        file.write(f"Average Activity Score: {average_activity_score:.2f}\n")
+        file.write(f"Highest Attendance: {highest_attendance}%\n")
+        file.write(f"Lowest Attendance: {lowest_attendance}%\n\n")
+
+        file.write("STUDENTS IN EACH CLASS\n")
+        file.write("----------------------\n")
+        file.write(number_of_students_in_each_class.to_string())
+        file.write("\n\n")
+
+        file.write("FEE REPORT\n")
+        file.write("----------\n")
+        file.write(f"Total Fees Collected: ₹{df['Fees_Paid'].sum()}\n")
+        file.write(f"Average Amount Paid Per Student: ₹{average_amount_paid_per_students:.2f}\n")
+        file.write(f"Total Outstanding Amount: ₹{total_outstanding_amount}\n\n")
+
+        file.write("STUDENTS WITH DUE FEES\n")
+        file.write("----------------------\n")
+        file.write(students_with_due_fees.to_string())
+        file.write("\n\n")
+
+        file.write("ATTENDANCE BY CLASS\n")
+        file.write("-------------------\n")
+        file.write(average_attendance_per_class.to_string())
+        file.write("\n\n")
+
+        file.write(f"Class With Highest Average Attendance: {class_with_highest_average_attendance}\n")
+        file.write(f"Class With Lowest Average Attendance: {class_with_lowest_average_attendance}\n")
+
+
 if __name__ == "__main__":
     main()
