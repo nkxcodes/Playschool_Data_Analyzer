@@ -79,10 +79,17 @@ def main():
     print()
     print('========== Visualization ==========')
 
+    plt.subplot(2, 1, 1)
     x = number_of_students_in_each_class.index
     y = number_of_students_in_each_class.values
 
     plt.bar(x, y, color='purple')
+
+    plt.subplot(2, 1, 2)
+    x2 = average_attendance_per_class.index
+    y2 = average_attendance_per_class.values
+    
+    plt.bar(x2, y2, color='green')
     plt.show()
 
 if __name__ == "__main__":
