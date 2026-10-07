@@ -16,7 +16,7 @@ def main():
     print(f'Total numbers of students: {total_number_of_students}')
 
     print()
-    print('Number of studnets in each clas: ')
+    print('Number of students in each clas: ')
     print(number_of_students_in_each_class)
 
     print()
@@ -33,7 +33,7 @@ def main():
 
     print()
     print(f'Lowest attendance: {lowest_attendance}')
-    
+
     print()
     print(f'========== FEE ANALYSIS ==========')
 
@@ -56,6 +56,24 @@ def main():
 
     print()
     print(f'Total outstanding amount: ₹{total_outstanding_amount}')
+
+    print()
+    print('========== Attendance Analysis ==========')
+
+    average_attendance_per_class = df.groupby('Class')['Attendance'].mean()
+    class_with_highest_average_attendance = average_attendance_per_class.idxmax()
+    class_with_lowest_average_attendance = average_attendance_per_class.idxmin()
+
+    print()
+    print('Average attendance per class: ')
+    print()
+    print(average_attendance_per_class)
+
+    print()
+    print(f'Class with highest average attendance: {class_with_highest_average_attendance}')
+
+    print()
+    print(f'Class with lowest average attendance: {class_with_lowest_average_attendance}')
 
 if __name__ == "__main__":
     main()
