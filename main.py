@@ -1,5 +1,6 @@
 
 import pandas as pd
+import matplotlib.pyplot as plt
 
 def main():
     df = pd.read_csv('data/students.csv')
@@ -74,6 +75,15 @@ def main():
 
     print()
     print(f'Class with lowest average attendance: {class_with_lowest_average_attendance}')
+
+    print()
+    print('========== Visualization ==========')
+
+    x = number_of_students_in_each_class.index
+    y = number_of_students_in_each_class.values
+
+    plt.bar(x, y, color='purple')
+    plt.show()
 
 if __name__ == "__main__":
     main()
